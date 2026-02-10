@@ -2,6 +2,7 @@ package src;
 
 import java.util.Scanner;
 
+
 public class pyEDLIN {
     public static void main(String[] args) {
         int[] lineaActiva = {0};
@@ -26,14 +27,17 @@ public class pyEDLIN {
                 ModificarLineaActiva(lineaActiva, sc);
                 ImprimirEnConsola(lineaActiva, lineas);
                 break;
-        
+            case "E":
+                editarLinea(lineaActiva, lineas, sc);
+                ImprimirEnConsola(lineaActiva, lineas);
+                break;
             default:
                 System.out.println("No es una opción valida");
                 break;
         }
     }
 
-    public static void ImprimirEnConsola(int[] lineaActiva, String[] lineas) {
+    private static void ImprimirEnConsola(int[] lineaActiva, String[] lineas) {
         System.out.println("--------------------------------------------------");
         int i = 0;
         do {
@@ -50,5 +54,10 @@ public class pyEDLIN {
             lineaActiva[0] = nuevaLineaActiva;
         }
         System.out.println("La nueva línea activa es: " + lineaActiva);
+    }
+    private static void editarLinea(int[] lineaActiva, String[] lineas, Scanner sc) {
+        System.out.println("Modifique el texto: ");
+        lineas[lineaActiva[0]] = sc.nextLine();
+        System.out.println("Texto modificado");
     }
 }

@@ -15,9 +15,9 @@
 2. [X] Modificamos el valor del puntero luego de asegurarnos que este dentro del rango 0-9.
 3. [X] Volvemos a imprimir.
 ### 4.
-1. [ ] Leemos el input del usuario. En este caso E.
-2. [ ] Leemos el texto que escriba el usuario y lo guardamos en el array con la línea activa.
-3. [ ] Volvemos a imprimir.
+1. [X] Leemos el input del usuario. En este caso E.
+2. [X] Leemos el texto que escriba el usuario y lo guardamos en el array con la línea activa.
+3. [X] Volvemos a imprimir.
 ### 5.
 1. [ ] Leemos el input del usuario. En este caso B.
 2. [ ] Marcamos el elemento del array con la línea activa y lo modificamos de forma que sea igual a ""
