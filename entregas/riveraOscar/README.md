@@ -6,10 +6,10 @@
 2. [X] Creamos un array donde cada elemento sea una línea individual
 3. [X] Nos aseguramos que el usuario pueda esccribir datos dentro de cada variable y limitamos el rango de las variables para que solo contengan numeros del 0 al 9.
 ### 2.
-1. [ ] Imprimimos en consola la separacion del texto que se puede editar y los comandos: ---------
-2. [ ] Creamos un while donde se defina cada linea del estilo:
+1. [X] Imprimimos en consola la separacion del texto que se puede editar y los comandos: ---------
+2. [X] Creamos un while donde se defina cada linea del estilo:
    n: | Texto
-3. [ ] Imprimimos cada comando
+3. [X] Imprimimos cada comando
 ### 3.
 1. [ ] Leemos el input del usuario. En este caso L.
 2. [ ] Modificamos el valor del puntero luego de asegurarnos que este dentro del rango 0-9.
