@@ -93,10 +93,9 @@ public class ExamenMina{
 				System.out.println("Felicidades Ganador!");
 				juegoEncendido=0;
 			}
-			else{
-				
-			}
 		}
+
+		scan.close();
 	}	
 		
 		
