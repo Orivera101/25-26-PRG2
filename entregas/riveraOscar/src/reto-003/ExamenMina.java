@@ -32,7 +32,7 @@ public class ExamenMina{
 			}
 		}
 	
-		int posX=0, posY=0, juegoEncendido=1, valoresCorrectos, contadorMapa=0, contadorMinas=0;
+		int posX=0, posY=0, juegoEncendido=1, contadorMapa=0, contadorMinas=0;
 		while(juegoEncendido==1){
 			for( int i = 0; i<mapaMinasMostrar.length; i++){            
 				for (int j = 0; j<=mapaMinasMostrar.length+1; j++) {                                     
@@ -40,23 +40,8 @@ public class ExamenMina{
 				}
 				System.out.println(" ");
 			}
-			valoresCorrectos=0;
-			while(valoresCorrectos==0){
-				System.out.println(" ");
-				System.out.println("Ingrese X");
-				posY = scan.nextInt();
-				System.out.println("Ingrese Y");
-				posX = scan.nextInt();
-				if(posX>5){
-					valoresCorrectos=0;
-				}
-				else if(posY>7){
-					valoresCorrectos=0;
-				}
-				else{
-					valoresCorrectos=1;
-				}
-			}
+			
+			ElegirPosición(scan, posX, posY);
 
 			if(mapaMinasActivas[posX][posY]=="1"){
 			mapaMinasMostrar[posX][posY]="x";
@@ -79,9 +64,27 @@ public class ExamenMina{
 				juegoEncendido=0;
 			}
 		}
-
 		scan.close();
 	}	
 		
-		
+	static void ElegirPosición(Scanner scan, int posX, int posY){
+		boolean valoresCorrectos=true;
+			while(valoresCorrectos==true){
+				System.out.println(" ");
+				System.out.println("Ingrese X");
+				posY = scan.nextInt();
+				System.out.println("Ingrese Y");
+				posX = scan.nextInt();
+				if(posX>5){
+					valoresCorrectos=false;
+				}
+				else if(posY>7){
+					valoresCorrectos=false;
+				}
+				else{
+					valoresCorrectos=true;
+				}
+			}
+	}
+	
 }
