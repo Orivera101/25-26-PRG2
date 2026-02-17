@@ -36,23 +36,25 @@ public class ExamenMina{
 	public static void main(String[] args){	
 	Scanner scan = new Scanner(System.in);
 		///////////////////////////
-		int i=0;	
-		while ( i < 5){
+		int cantidadMinas=0;	
+		while ( cantidadMinas < 5){
 			int PosYMina = (int)(Math.random()*2+1);
 			int PosXMina = (int)(Math.random()*4+1);
 			if (mapaMinasActivas[PosXMina][PosYMina]=="1"){
-			i=i-1;
+			cantidadMinas--;
+
 			}
 			else {
-				mapaMinasActivas[PosXMina+1][PosYMina+1]="1";
+				mapaMinasActivas[PosXMina][PosYMina]="1";
+				cantidadMinas++;
 			}
-			i++;
+			cantidadMinas++;
 		}
 	
 		int posX=0, posY=0, juegoEncendido=1, valoresCorrectos, contadorMapa=0, contadorMinas=0;
 		/////////////Comienza el juego
 		while(juegoEncendido==1){
-			for( i = 0; i<mapaMinasMostrar.length; i++){            
+			for( int i = 0; i<mapaMinasMostrar.length; i++){            
 				for (int j = 0; j<=mapaMinasMostrar.length+1; j++) {                                     
 					System.out.print(mapaMinasMostrar[i][j]);
 				}
