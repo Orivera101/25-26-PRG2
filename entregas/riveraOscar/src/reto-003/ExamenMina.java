@@ -85,11 +85,11 @@ public class ExamenMina{
 			}
 			
 			contadorMapa++;
-			if(contadorMinas>2){
+			if(contadorMinas>3){
 				juegoEncendido=0;
 				System.out.println("Has perdido");
 			}
-			else if(contadorMapa>=31){
+			else if(contadorMapa>=30){
 				System.out.println("Felicidades Ganador!");
 				juegoEncendido=0;
 			}
