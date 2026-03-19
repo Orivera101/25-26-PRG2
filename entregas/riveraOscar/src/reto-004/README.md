@@ -12,7 +12,7 @@ La aplicación constara de una aplicación sencilla que muestre las capacidades 
 Tomando en cuenta los recursos dados por el reto:
 Algoritmo de Euclides para el cálculo del máximo común divisor
 
-´´´
+```
 int calcularMCD(int a, int b) {
     while (b != 0) {
         int temporal = b;
@@ -21,4 +21,4 @@ int calcularMCD(int a, int b) {
     }
     return a;
 }
-´´´
+```
