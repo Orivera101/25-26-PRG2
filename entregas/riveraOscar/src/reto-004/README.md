@@ -9,6 +9,8 @@ Esto significa que la vista privada consta de de un numerador, un denominador y 
 
 La aplicación constara de una aplicación sencilla que muestre las capacidades de este intervalo.
 
+Nota: El denominador y el numerador estan constituidos por enteros pero considero que también seria valido el realizar una propuesta donde estos sean doubles. Para este reto los mantendre como enteros.
+
 Tomando en cuenta los recursos dados por el reto:
 Algoritmo de Euclides para el cálculo del máximo común divisor
 

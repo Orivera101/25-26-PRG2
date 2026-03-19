@@ -2,8 +2,12 @@ package vistas.fraccion;
 
 public class Fraccion {
 
+    private int numerador;
+    private int denominador;
+    private double numero;
+
     public Fraccion(int numerador, int denominador){}
-    public Fraccion(int numero){}
+    public Fraccion(double numero){}
     public Fraccion(Fraccion fraccion){}
     public Fraccion(){}
     
