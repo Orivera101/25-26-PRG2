@@ -23,7 +23,9 @@ public class Fraccion {
         this.denominador = 1;
     }
     
-    public Fraccion clonar(){}
+    public Fraccion clonar(){
+        return new Fraccion(this);
+    }
     
     public void sumar(Fraccion fraccion){}
     public void restar(Fraccion fraccion){}
