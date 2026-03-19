@@ -5,7 +5,7 @@ Primero anotando un poco lo que puede realizar una fracción tomando base de los
 * Modificadores (oponer e invertir)
 * Mostrar
 
-Esto significa que la vista privada consta de de un numerador, un denominador y un número.
+Esto significa que la vista privada consta de de un numerador y un denominador. Pense también adecuado incluir un atributo número pero para simplificar el codigo, solo mantuve el denominador y numerador.
 
 La aplicación constara de una aplicación sencilla que muestre las capacidades de este intervalo.
 
