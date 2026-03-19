@@ -27,11 +27,26 @@ public class Fraccion {
         return new Fraccion(this);
     }
     
-    public void sumar(Fraccion fraccion){}
-    public void restar(Fraccion fraccion){}
-    public void multiplicar(Fraccion fraccion){}
-    public void dividir(Fraccion fraccion){}
-    public void potenciar(int exponente){}
+    public void sumar(Fraccion fraccion){
+        numerador = (this.numerador * fraccion.denominador) + (this.denominador * fraccion.numerador);
+        denominador = this.denominador * fraccion.denominador;
+    }
+    public void restar(Fraccion fraccion){
+        numerador = (this.numerador * fraccion.denominador) - (this.denominador * fraccion.numerador);
+        denominador = this.denominador * fraccion.denominador;
+    }
+    public void multiplicar(Fraccion fraccion){
+        numerador *= fraccion.numerador;
+        denominador *= fraccion.denominador;
+    }
+    public void dividir(Fraccion fraccion){
+        numerador *= fraccion.denominador;
+        denominador *= fraccion.numerador;
+    }
+    public void potenciar(int exponente){
+        numerador = (int) Math.pow(this.numerador, exponente);
+        denominador = (int) Math.pow(this.denominador, exponente);
+    }
 
     public boolean esMayor(Fraccion fraccion){}
     public boolean esMenor(Fraccion fraccion){}
