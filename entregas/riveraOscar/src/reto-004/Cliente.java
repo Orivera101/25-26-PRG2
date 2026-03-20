@@ -11,6 +11,9 @@ public class Cliente {
         f1.sumar(f2);
         System.out.print("f1 + f2 = ");
         f1.mostrar();
+        f1.simplificar();
+        System.out.print("f1 simplificado = ");
+        f1.mostrar();
 
         Fraccion f3 = new Fraccion(5);
         System.out.println("¿Es f3 mayor a f2? " + f3.esMayor(f2));
