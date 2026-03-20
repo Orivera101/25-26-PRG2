@@ -70,4 +70,11 @@ public class Fraccion {
     public void oponer(){
         this.numerador = -this.numerador;
     }
+
+    public void simplificar(){
+
+    }
+    public void calcularMCD(){
+        
+    }
 }
