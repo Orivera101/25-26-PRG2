@@ -10,7 +10,7 @@ public class Fraccion {
         this.numerador = numerador;
         this.denominador = denominador;
     }
-    public Fraccion(double numero){
+    public Fraccion(int numero){
         this.numerador = numero;
         this.denominador = 1;
     }
@@ -48,10 +48,16 @@ public class Fraccion {
         denominador = (int) Math.pow(this.denominador, exponente);
     }
 
-    public boolean esMayor(Fraccion fraccion){}
-    public boolean esMenor(Fraccion fraccion){}
+    public boolean esMayor(Fraccion fraccion){
+        return (numerador * fraccion.denominador) > (denominador * fraccion.numerador);
+    }
+    public boolean esMenor(Fraccion fraccion){
+        return (numerador * fraccion.denominador) < (denominador * fraccion.numerador);
+    }
 
-    public boolean equals(Fraccion fraccion){}
+    public boolean equals(Fraccion fraccion){
+        return !this.esMayor(fraccion) && !this.esMenor(fraccion);
+    }
 
     public void mostrar(){}
     public void invertir(){}
