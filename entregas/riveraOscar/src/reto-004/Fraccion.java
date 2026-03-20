@@ -1,4 +1,4 @@
-package vistas.fraccion; 
+package entregas.riveraOscar.src.Fraccion;
 
 public class Fraccion {
 
