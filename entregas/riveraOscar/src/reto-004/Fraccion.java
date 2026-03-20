@@ -59,7 +59,15 @@ public class Fraccion {
         return !this.esMayor(fraccion) && !this.esMenor(fraccion);
     }
 
-    public void mostrar(){}
-    public void invertir(){}
-    public void oponer(){}
+    public void mostrar(){
+        System.out.println(this.numerador + " / " + this.denominador);
+    }
+    public void invertir(){
+        int temporal = numerador;
+        this.numerador = this.denominador;
+        this.denominador = temporal;
+    }
+    public void oponer(){
+        this.numerador = -this.numerador;
+    }
 }
