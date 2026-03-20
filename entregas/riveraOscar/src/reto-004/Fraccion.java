@@ -72,9 +72,16 @@ public class Fraccion {
     }
 
     public void simplificar(){
-
+        int mcd = calcularMCD(this.numerador, this.denominador);
+        this.numerador /= mcd;
+        this.denominador /= mcd;
     }
-    public void calcularMCD(){
-        
+    public int calcularMCD(int a, int b) {
+        while (b != 0) {
+            int temporal = b;
+            b = a % b;
+            a = temporal;
+        }
+        return a;
     }
 }
