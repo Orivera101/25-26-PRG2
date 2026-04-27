@@ -1,5 +1,5 @@
 Para empezar con el codigo para el Reto-005 basado en un simulacro de carrera de caballo, iniciando por la pista que tendra los siguientes detalles:
-* Cada caballo (2 caballos especificamente) tiene una longitud de 4 casillas " ;-;' ".
+* Cada caballo (planteado para que se pueda elegir la cantidad de caballos que competiran) tiene una longitud de 4 casillas " ;-;' ".
 * La "cabeza" (') recorrera 40 casillas hasta llegar al final.
 * Por lo tanto la longitud de la pista sera de 44 casillas contando la longitud del caballo.
 
