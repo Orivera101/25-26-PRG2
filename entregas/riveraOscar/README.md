@@ -5,4 +5,4 @@ Para empezar con el codigo para el Reto-005 basado en un simulacro de carrera de
 
 Hay que tomar en cuenta que se puede llegar a un empate y que el movimiento de los caballos sera realizado de forma aleatoria en un rango de 0, 1 o 2 casillas.
 
-El codigo sera construido en base a 5 archivos de caodigo siendo el main el archivo Juego.java basado en el codigo otorgado en las indicaciones. Los otros 4 archivos sera utilizados para la definicion de las clases: Carrera, Caballo, Pista y Turno. Se utilizara otra clase Console como auxiliar.
+El codigo sera construido en base a 5 archivos de caodigo siendo el main el archivo Juego.java basado en el codigo otorgado en las indicaciones. Los otros 4 archivos sera utilizados para la definicion de las clases: Carrera, Caballo, Pista y Turno.
