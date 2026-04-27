@@ -1,11 +1,12 @@
 public class Pista {
-    private int largoPista = 44;
-    private int distanciaMeta = 40;
-    private String dibujoCaballo = ";-;'";
-    private Console console;
+    private int largoPista;
+    private int distanciaMeta;
+    private String dibujoCaballo;
 
     public Pista() {
-        this.console = new Console();
+        this.largoPista = 44;
+        this.distanciaMeta = 40;
+        this.dibujoCaballo = ";-;'";
     }
 
     public void mostrarPista(Caballo[] caballos) {
