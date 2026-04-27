@@ -9,22 +9,17 @@ public class Pista {
     }
 
     public void mostrarPista(Caballo[] caballos) {
-        for (int i = 0; i < largoPista; i++) {
-            console.write("-");
-        }
-        console.writeln("");
+        System.out.println("-".repeat(largoPista));
 
-        for (int i = 0; i < caballos.length; i++) {
-            for (int j = 0; j < caballos[i].obtenerPosicion(); j++) {
-                console.write(" ");
+        for (Caballo caballo : caballos) {
+            for (int j = 0; j < caballo.obtenerPosicion(); j++) {
+                System.out.print(" ");
             }
-            console.writeln(dibujoCaballo);
+            System.out.println(dibujoCaballo);
         }
 
-        for (int i = 0; i < largoPista; i++) {
-            console.write("-");
-        }
-        console.writeln("");
+        System.out.println("-".repeat(largoPista));
+        System.out.println();
     }
 
     public boolean existeGanador(Caballo[] caballos) {

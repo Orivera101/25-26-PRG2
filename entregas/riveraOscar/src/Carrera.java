@@ -12,12 +12,14 @@ public class Carrera {
         this.turno = new Turno(caballos.length);
     }
 
-    public void jugar(){
+    public void jugar() {
         while (!pista.existeGanador(caballos)) {
             pista.mostrarPista(caballos);
+            
             int caballoActual = turno.toca();
             caballos[caballoActual].avanzar();
             turno.cambiar();
+
         }
         pista.mostrarPista(caballos);
         if (pista.existeEmpate(caballos)) {
