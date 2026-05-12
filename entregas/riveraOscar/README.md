@@ -8,6 +8,4 @@ Repasando las reglas, tenemos que el objetivo del jugador es no pasarse de 21, p
 * As: 1 o 11 (A conveniencia)
 
 El jugador puede pedir otra carta, reiniciar si cree que no lo conseguira o salir del juego.
-Las clases que voy a implementar son Carta, Baraja, Mano y Blackjack(Main).
-
-Notas adicionales:
+Las clases que voy a implementar son Carta, Baraja, Mano, Blackjack y Juego(main).
