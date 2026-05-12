@@ -66,6 +66,5 @@ public class Blackjack {
                 }
             }
         }
-        System.out.println("¡Gracias por jugar!");
     }
 }
