@@ -1,3 +1,4 @@
+package entregas.riveraOscar;
 public class Mano {
     private Carta[] misCartas;
     int contadorMisCartas;

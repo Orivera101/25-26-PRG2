@@ -1,3 +1,4 @@
+package entregas.riveraOscar;
 public class Carta{
     private String valor;
     private String palo;

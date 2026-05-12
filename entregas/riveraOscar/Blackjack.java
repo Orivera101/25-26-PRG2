@@ -1,3 +1,4 @@
+package entregas.riveraOscar;
 import java.util.Scanner;
 
 public class Blackjack {
